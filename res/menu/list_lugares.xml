@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.osmeuslugares.ListLugares" >
+
+    <item
+        android:id="@+id/nuevo_lugar"
+        android:orderInCategory="1"
+        android:showAsAction="always"
+        android:title="@string/add_lugar" 
+        android:visible="true" 
+        android:icon="@android:drawable/ic_menu_add"/>
+    <item 
+        android:id="@+id/acerca_de" 
+        android:title="@string/acerca_de" 
+        android:orderInCategory="2"></item>
+	
+</menu>

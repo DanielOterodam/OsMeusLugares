@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/iconoCategoria"
+            android:layout_width="wrap_content"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:src="@drawable/ic_otros" />
+
+        <TextView
+            android:id="@+id/textViewNombreLugar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/RelativeLayout1" >
+
+        <TextView
+            android:id="@+id/textViewTipoLugar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tipo"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+<!--   android:layout_alignBottom="@+id/textViewLugar" -->
+
+        <TextView
+            android:id="@+id/textViewDireccionLugar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewTipoLugar"
+            android:text="@string/direccion"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewCiudadLugar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewDireccionLugar"
+            android:text="@string/ciudad"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewUrlLugar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewCiudadLugar"
+            android:text="@string/url"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewTelLugar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewUrlLugar"
+            android:text="@string/telefono"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewTipoBD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textViewDireccionBD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_below="@+id/textViewTipoBD"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textViewCiudadBD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_below="@+id/textViewDireccionBD"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textViewUrlBD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_below="@+id/textViewCiudadBD"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textViewTelefonBD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_below="@+id/textViewUrlBD"
+            android:textColor="#000000" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

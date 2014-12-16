@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4CAF50"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.osmeuslugares.EditCategoriaActivity" >
+
+    <TextView
+        android:id="@+id/textViewIcono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spinnerIcono"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dp"
+        android:paddingTop="10dp"
+        android:text="@string/icono"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000" />
+
+    <Spinner
+        android:id="@+id/spinnerIcono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewIcono"
+        android:layout_centerHorizontal="true"
+        android:entries="@array/valores_iconos_lugares"
+        android:paddingTop="10dp" />
+
+    <TextView
+        android:id="@+id/textViewNombreCategoria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spinnerIcono"
+        android:layout_below="@+id/spinnerIcono"
+        android:layout_marginTop="18dp"
+        android:text="@string/nombre"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/editNombreCategoria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewNombreCategoria"
+        android:layout_below="@+id/textViewNombreCategoria"
+        android:layout_marginTop="14dp"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>
